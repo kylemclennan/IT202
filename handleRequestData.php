@@ -9,6 +9,13 @@
 		echo "<br>" . $number . " should be a number ...";
 		echo "<br>but it might not be<br>";
 	}
+	$var1 = "a";
+	$var2 = "b";
+	echo $var1 . " " . $var2;
+	echo "<br>";
+	echo "When I passed multiple same-named parameters with different valuse it only took the latest one I used.";
+	echo "<br>";
+	echo "When I passed a parameter value with a special character it still displayed the special character.";
 	//TODO
 	//handle addition of 2 or more parameters with proper numbering
 	//concatenate 2 or more parameters values and echo them
