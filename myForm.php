@@ -7,26 +7,27 @@ function getName(){
 }
 ?>
 <html>
-<head></head>
-<body><?php getName();?>
-<form mode="GET" action="#">
-<input name="name" type="text" placeholder="Enter your name"/>
-<input name="password" type="password" placeholder="Enter your password"/>
+<head>
+<script>
+function validate(){
+	var form = document.forms[0];
+	var password = form.password.value;
+	car conf = form.confirm.value;
+	console.log(password)
+	console.log(conf);
+	if (password == conf){
+		return true;
+	}
 
-<label for ="Yes">Yes</label><!-- for="id of element"-->
-<input type=:"radio" name="radio" id="Yes" calue="Yes"/>
-<label for"No>No</label>
-<input> type="radio" name="radio" id="No" value="No"/>
-<!--comment-->
-<select name ="dropdown">
-	<option value="1">One</option>
-	<option value="2">Two</option>
-	<option value="3"Three</option>
-</select>
-<input type="checkbox" name"check"/>
-<textarea name="text"></textarea>
-<input type="date" name="date"/>
-<!--end-->
+	alert("Passwords don't match");
+	return false;
+</script>
+</head>
+<body><?php getName();?>
+<form method="POST" action="#" onsubmit="return validate();">
+<input name="name" type="text" placeholder="Enter your name"/>
+<input type="password" name="password"/>
+<input type="password" name="confirm"/>
 
 <input type="submit" value="Try it"/>
 </form>
