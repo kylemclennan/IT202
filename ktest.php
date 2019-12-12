@@ -27,3 +27,4 @@ if($type == "option"){
     header("Location: landing.php");
   }
 ?>
+// can use php to make table, how to hash a password
