@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 
 <html>
 <head>
+<h1> Registration</h1>
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -28,6 +29,10 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+  <p> Welcome to the registration page</p>
+  <p> Please enter your username in the first box</p>
+  <p> Please enter your password in the second box</p>
+  <p> Please re- enter your password in the third box</p>
 	<form id="register_form" method="POST"/>
 		<input type="text" name="username"/>
 		<input type="password" name="password"/>
