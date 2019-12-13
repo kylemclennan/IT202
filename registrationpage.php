@@ -39,6 +39,12 @@ $(document).ready(function(){
 		<input type="password" name="confirm"/>
 		<input type="submit" value="Register"/>
 	</form>
+<button onclick="myFunction()">Back To Login</button>
+<script>
+function myFunction() {
+  location.replace("https://web.njit.edu/~km653/IT202/IT202Project.php")
+  }
+</script>
 </body>
 </html>
 <?php
